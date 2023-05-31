@@ -175,10 +175,7 @@ h1{
     background-image: url(./../img/cortes.png);
 }
 .item3{
-    background-image: url(./../img/productos.png);
-}
-.item4{
-    background-image: url(./../img/accesorios.png);
+    background-image: url(./../img/fondo-turnos.png);
 }
 footer{
     background-color: #000;
@@ -395,7 +392,7 @@ th{
     font-family: sans-serif;
     width: 420px;
     height: 520px;
-    background-color: rgba(255, 230, 0, 0.808);
+    background-color:#000;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     color: black;
     box-sizing: border-box;
@@ -423,7 +420,9 @@ th{
     font-size: 27px;
 
 }
-
+.login-box{
+    border: solid #fff;
+}
 .login-box input {
     width: 100%;
     margin-bottom: 20px;
@@ -452,8 +451,8 @@ th{
 }
 .login-box input[type="submit"]:hover {
     cursor: pointer;
-    background-color: black;
-    color: white;
+    background-color:rgb(221, 152, 15);
+    color: black;
 }
 .login-box a {
     text-decoration: none;
@@ -462,10 +461,10 @@ th{
     color: white;
 }
 .login-box a:hover {
-    color: black;
+    color:aliceblue;
 }
 .titulo{
-    color: #000000;
+    color:aliceblue;
 }
 .body-login{
     background-image: url(./../img/fondo-login.jpg);
@@ -489,9 +488,15 @@ th{
 .menu-login a:hover{
     color: yellow;
 }
+.logo{
+    color: white;
+}
+.logo-good{
+    color: yellow;
+}
 /*ESTILOS ARCHIVO turnos.html*/
 fieldset{
-    background-image: url(./../img/fondo-turnos.png);
+    background-image: url(./../img/fondo-turnos-2.jpg);
     background-attachment: fixed;
     background-size: cover;
     padding: 50px;
@@ -516,6 +521,7 @@ label{
     font-family: 'Chunk';
 }
 .opc-turnos{
-    background-color: white;
+    font-family: 'Chunk';
     color: black;
+    font-size: x-large;
 }
