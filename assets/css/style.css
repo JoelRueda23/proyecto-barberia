@@ -25,6 +25,11 @@
 }
 body{
     background-color: rgba(0, 0, 0, 0.829);
+    
+}
+.galeria-general{
+    height: 100%;
+    background-image: linear-gradient(#000000, rgba(233, 233, 14, 0.466));
 }
 header{
     display: flex;
@@ -41,6 +46,13 @@ header span{
     color: #000;
     text-shadow: 0 0 5px #ccc, 0 0 5px #ccc;
     font-size: xx-large;
+}
+marquee{
+    color: white;
+    font-size: xx-large;
+}
+.good{
+    color: yellow;
 }
 .logo{
     font-size: xx-large;
@@ -114,13 +126,13 @@ h1{
 
 @keyframes nombre{
     0%, 30%{
-        background-image: url(./assets/img/barber-g4a38dcaf1_640.jpg);
+        background-image: url(./../img/slider1.jpg);
     }
     35%, 65%{
-        background-image: url(./assets/img/barber-ga92bd701e_640.jpg);
+        background-image: url(./../img/slider2.jpg)
     }
     70%, 100%{
-        background-image: url(./assets/img/barber-shop-g0b2f7f7a6_640.jpg);
+        background-image: url(./../img/slider3.jpg);
     }
 }
 .nuestros-servicios{
@@ -157,16 +169,16 @@ h1{
     transition: all 0.9s;
 }
 .item1{
-    background-image: url(./assets/img/galeria-corte.png);
+    background-image: url(./../img/galeria-corte.png);
 }
 .item2{
-    background-image: url(./assets/img/cortes.png);
+    background-image: url(./../img/cortes.png);
 }
 .item3{
-    background-image: url(./assets/img/productos.png);
+    background-image: url(./../img/productos.png);
 }
 .item4{
-    background-image: url(./assets/img/accesorios.png);
+    background-image: url(./../img/accesorios.png);
 }
 footer{
     background-color: #000;
@@ -267,14 +279,243 @@ iframe{
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
 }
-
-
-/*PRUEBAS CARRUSEL
-.carousel-item{
-    width: 100% !important;
-    height: 400px !important;
-}
-.img1{
+/*ESTILOS ARCHIVO CORTE*/
+.container-img{
     width: 100%;
-}*/
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-img .box-img:nth-child(1){
+    grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
+.img-grid:hover{
+    transform: scale(1.05);
+    transition: all ease-out 0.2s;
+}
+@media screen and (max-width: 800px){
+    .container-img{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:10px;
+        grid-template-rows: 200px;
+    }
+    .container-img .box-img:nth-child(1){
+        grid-column-start: span 1;
+    }
+}
+@media screen and (max-width: 500px){
+    .container-img{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-img .box-img img{
+        height: 200px;
+    }
+}
+/*ESTILOS ARCHIVO galeria-precios*/
+table{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ccc;
+    width: 100%;
+}
+th{
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    width: 50%;
+    border: solid;
+}
+.lst-precio{
+    text-align: center;
+    font-size: xx-large;
+}
+.contenedor-precios{
+    margin-top: 50px;
+    background-image:url(../img/barbershop-g355ba291e_1280.jpg);
+    background-size: cover;
+}
+.lista-precios{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    border-radius: 20px;
+    padding: 30px;
+}
+.pie-lista{
+    color: #fff;
+    text-align: center;
+}
+/*ESTILOS ARCHIVOS productos*/
+.caja-img{
+    display:inline-block;
+}
+.prod{
+    border: solid;
+    background-color: yellow;
+    font-size: xx-large;
+    color: #000000;
+    border-radius: 10px;
+}
+.prod:hover{
+    color:white ;
+}
+.caja-img{
+    margin-top: 10px;
+}
+/*ESTILO LOGIN*/
+.login-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 
+
+    
+    background-size: cover; 
+    font-family: sans-serif;
+    width: 420px;
+    height: 520px;
+    background-color: rgba(255, 230, 0, 0.808);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    color: black;
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.contenedor-logo{
+    width: 200px;
+}
+
+.contenedor-logo img{
+    width: 50%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    position: relative;
+    text-align: center;
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 27px;
+
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box .inputs{
+    padding-top: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 20px;
+}
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #675c5d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+}
+.login-box a:hover {
+    color: black;
+}
+.titulo{
+    color: #000000;
+}
+.body-login{
+    background-image: url(./../img/fondo-login.jpg);
+    background-size:cover;
+    background-position: 0px 70px;
+
+}
+.contenedor-principal{
+    display: grid;
+    grid-template-rows: 25% 80%;
+}
+.header-login{
+    background-color: #000;
+}
+.logo-login{
+    font-size: xx-large;
+}
+.menu-login ul li a{
+    color:#fff;
+}
+.menu-login a:hover{
+    color: yellow;
+}
+/*ESTILOS ARCHIVO turnos.html*/
+fieldset{
+    background-image: url(./../img/fondo-turnos.png);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+}
+h2{
+    font-family: 'Chunk';
+    color:yellow;
+}
+.boton-enviar{
+    padding: 9px;
+    border-radius: 12px;
+    background: yellow;
+}
+legend{
+    font-family: 'Chunk';
+    color: yellow;
+    font: xx-large;
+}
+label{
+    color: yellow;
+    font-family: 'Chunk';
+}
+.opc-turnos{
+    background-color: white;
+    color: black;
+}
