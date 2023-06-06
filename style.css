@@ -112,7 +112,16 @@ h1 {
   margin-bottom: 20px;
   font-size: 20px;
 }
-
+.info a{
+    background-color: rgba(255, 230, 0, 0.808);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #000;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
 .mas-info:hover {
   background-color: black;
 }
@@ -171,15 +180,15 @@ h1 {
 }
 
 .item1 {
-  background-image: url(./../img/galeria-corte.png);
+  background-image: url(./assets/img/galeria-corte.png);
 }
 
 .item2 {
-  background-image: url(./../img/cortes.png);
+  background-image: url(./assets/img/cortes.png);
 }
 
 .item3 {
-  background-image: url(./../img/fondo-turnos.png);
+  background-image: url(./assets/img/fondo-turnos.png);
 }
 
 footer {

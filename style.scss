@@ -111,6 +111,18 @@ h1{
         font-size: 20px;
     }
 }
+.info{
+    a{
+        background-color: rgba(255, 230, 0, 0.808);
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-shadow: 0 0 5px #000;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+}
 .mas-info:hover{
     background-color: black;
 }
